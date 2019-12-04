@@ -1,0 +1,25 @@
+{#
+  This is an example home page template. It inherits and extends a layout template
+  that lives in the top-level views/ folder for convenience
+#}
+
+{% extends "layout.html" %}
+
+{% block main %}
+  <div class="main-content">
+    <h3>Test Apostrophe - filters - and
+      {% if not data.user %}
+        <a class="login-link" href="{{ apos.prefix }}/login">Login</a>
+      {% endif %}
+    </h3>
+    <p>
+    instructions for performing the test:<br>
+    add many piece products with score from 1 to 10 <br>
+    open home Page Settings <br>
+    Info tab <br>
+    best product - Browse ->  show all file end not filter by setting in lib/modules/home-pages/index.js.
+
+    
+    </p>
+  </div>
+{% endblock %}
